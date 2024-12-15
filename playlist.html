@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Sedih</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <style>
+      /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    background-color: #181818;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    min-height:100vh ;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.header .cover {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.header .title h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.header .title p {
+    font-size: 0.9rem;
+    color: #b3b3b3;
+}
+
+.header .title span {
+    color: #1db954;
+}
+
+/* Playlist */
+.playlist {
+    padding: 20px;
+}
+
+.playlist ul {
+    list-style-type: none;
+}
+
+.playlist li {
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+.playlist li:last-child {
+    border-bottom: none;
+}
+
+.playlist span {
+    color: #1db954;
+    font-weight: bold;
+}
+
+/* Hover untuk Cover Image */
+.header .cover {
+    transition: transform 0.3s ease;
+}
+
+.header .cover:hover {
+    transform: scale(1.1);
+}
+
+/* Hover untuk Judul Lagu */
+.playlist li {
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer; /* Biar keliatan bisa di-klik */
+}
+
+.playlist li:hover {
+    background-color: #333;
+    color: #1db954; /* Warna hijau khas Spotify */
+}
+
+/* Hover untuk Link atau Seksi "Now Playing" */
+.now-playing span {
+    transition: color 0.3s ease;
+}
+
+.now-playing span:hover {
+    color: #ffffff; /* Warna putih terang */
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img data-aos="slide-up" src="giphy (3).webp" alt="Satu Indonesia Sedang Menangis" class="cover">
+            <div class="title">
+                <h1 data-aos="slide-up">Playlist kami!</h1>
+                <p data-aos="slide-up">Happy family</p>
+                <p data-aos="slide-up">by <span>roar</span>• 5j 55 mnt</p>
+            </div>
+        </div>
+        <div data-aos="slide-up" class="playlist">
+            <ul>
+                <li class="playlist-item" data-song-id="1">1. <span>A Little Piece Of Heaven</span> - Avenged Sevenfold</li>
+                <li class="playlist-item" data-song-id="2">2. <span>Gunslinger</span> - Avenged Sevenfold</li>
+                <li class="playlist-item" data-song-id="3">3. <span>After life</span> - Avenged Sevenfold</li>
+                <li class="playlist-item" data-song-id="4">4. <span>Almost easy</span> - Avenged Sevenfold</li>
+                <li class="playlist-item" data-song-id="5">5. <span>Danger Line</span> - Avenged Sevenfold</li>
+                <li class="playlist-item" data-song-id="6">6. <span>Scream</span> - Avenged Sevenfold</li>
+                <li class="playlist-item" data-song-id="7">7. <span>Size the day</span> - Avenged Sevenfold</li>
+                <li class="playlist-item" data-song-id="8">8. <span>So Far Away</span> - Avenged Sevenfold</li>
+                <li class="playlist-item" data-song-id="9">9. <span>Tension</span> - Avenged Sevenfold</li>
+                <li class="playlist-item" data-song-id="10">10. <span>Dear God</span> - Avenged Sevenfold</li>
+                <li class="playlist-item" data-song-id="11">11. <span>Untungnya</span> - Bernadya</li>
+                <li class="playlist-item" data-song-id="12">12. <span>1 Bulan</span> - Bernadya</li>
+                <li class="playlist-item" data-song-id="13">13. <span>Sialnya Hidup Harus Tetap Berjalan</span> - Bernadya</li>
+                <li class="playlist-item" data-song-id="10">10. <span>Dear God</span> - Avenged Sevenfold</li>
+                <li class="playlist-item" data-song-id="10">10. <span>Dear God</span> - Avenged Sevenfold</li>
+                <li class="playlist-item" data-song-id="10">10. <span>Dear God</span> - Avenged Sevenfold</li>
+                <li class="playlist-item" data-song-id="10">10. <span>Dear God</span> - Avenged Sevenfold</li>
+                <li class="playlist-item" data-song-id="10">10. <span>Dear God</span> - Avenged Sevenfold</li>
+                <li class="playlist-item" data-song-id="10">10. <span>Dear God</span> - Avenged Sevenfold</li>
+                <!-- Tambahkan lagu lainnya jika perlu -->
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Fungsi untuk mengarahkan ke song-page.html dengan query string song sesuai ID lagu
+        function setSong(songId) {
+            window.location.href = `song-page.html?song=${songId}`;
+        }
+
+        // Menambahkan event listener untuk setiap item playlist
+        document.querySelectorAll('.playlist-item').forEach((item) => {
+            item.onclick = function () {
+                const songId = item.getAttribute('data-song-id');
+                setSong(songId); // Arahkan ke song-page.html dengan ID lagu yang dipilih
+            };
+        });
+    </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Durasi animasi dalam milidetik
+    offset: 100,    // Jarak sebelum elemen terlihat (px)
+    once: false,     // Animasi hanya berjalan sekali
+    debug: true     // Debug untuk cek log elemen di console
+  });
+</script>
+</body>
+</html>
